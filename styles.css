@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+
+:root {
+  --sidebar-bg: #004d40;       
+  --sidebar-hover: #00695c;     
+  --sidebar-active: #00897b;   
+  --text-color: #ffffff;       
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+aside.sidebar {
+  width: 280px;
+  height: 100vh;       
+  background-color: var(--sidebar-bg);
+  position: fixed;          
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;    
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.sidebar-header {
+  background-color: #f0eacf;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;        
+  gap: 12px;                   
+}
+
+.sidebar-header img {
+  width: 36px;
+  height: auto;
+}
+
+.sidebar-header h2 {
+  font-size: 1rem; 
+  color: var(--sidebar-bg);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  color: var(--text-color);
+  text-decoration: none;       
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+
+.sidebar-nav a i {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+
+.sidebar-nav a:hover {
+  background-color: var(--sidebar-hover);
+  padding-left: 28px;       
+}
+
+
+
+body {
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.main-content {
+    margin-left: 300px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+}
+
+.seccion-contenido {
+    background: #ffffff;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+}
+
+.seccion-titulo {
+    text-align: center;
+    color: var(--sidebar-active);
+    margin-bottom: 25px;
+}
+
+.seccion-titulo i {
+    font-size: 2.5rem;
+    color: var(--sidebar-hover);
+    margin-bottom: 10px;
+    display:flex;
+    align-items:center;
+}
+
+.seccion-titulo h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+
+.tarjeta-contenido .texto {
+    font-size: 1.05rem;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.caja-historia, 
+.caja-cantones, 
+.caja-autoridades, 
+.caja-gastronomia, 
+.caja-turismo {
+    background-color: #d8e6f4;
+    border-left: 5px solid #2d6a4f;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.caja-historia h4, 
+.caja-cantones h4, 
+.caja-autoridades h4, 
+.caja-gastronomia h4, 
+.caja-turismo h4 {
+    color: var(--sidebar-bg);
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+
+ul {
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+
+.simbolos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.simbolo {
+    flex: 10;
+    min-width: 280px;
+    background: #d8e6f4;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #aca7a7;
+    text-align: center;
+}
+
+
+img {
+    max-width: 220px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px;
+    display:block;
+    margin:15px auto;
+}
+
+.mapa,
+.imagen-gastronomia, 
+.imagen-turismo {
+    text-align: center;
+    margin: 15px auto;
+    zoom: 3;
+}
+
